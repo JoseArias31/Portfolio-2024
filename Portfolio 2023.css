@@ -201,13 +201,18 @@ margin-right: 90px;
   }
 
   #rd3-section{
-    padding-top: 120px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     place-content: space-evenly;
     width: 100%;
     text-align-last: center;
     color: white;
+  }
+
+  .iskills {
+    width: 150px;
+    height: 150px;
   }
 
 /* SKILLS */
