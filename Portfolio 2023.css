@@ -45,6 +45,10 @@ margin-right: 90px;
     margin-right: -170px;
 }
 
+#resume {
+    border: 2px solid white;
+}
+
 /* HEADER */
 
 
@@ -169,8 +173,8 @@ margin-right: 90px;
   }
 
   .grid{
-    width: 607px;
-    height: 326px;
+    width: 532px;
+    height: 314px;
     object-fit: cover;
     border: 4px solid black;
     border-radius: 10px;
@@ -178,5 +182,34 @@ margin-right: 90px;
   }
 
 /* PROJECTS */
+
+
+/* SKILLS */
+
+
+
+
+.grid-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #rd3-section{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    place-content: space-evenly;
+    width: 100%;
+    text-align-last: center;
+    color: white;
+  }
+
+/* SKILLS */
 
 
