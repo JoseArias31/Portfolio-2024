@@ -35,6 +35,14 @@ header {
     font-size: 20px;
 }
 
+#aboutMe {
+    margin-left: 170px;
+}
+
+#contactMe {
+    margin-right: 170px;
+}
+
 
 #main-nav{
     text-align-last: left;
@@ -48,7 +56,8 @@ margin-right: 90px;
 
 .nav-logo {
     margin-left: 90px;
-    margin-right: -170px;
+    z-index: 900;
+    width: 60px;
 }
 
 #resume {
