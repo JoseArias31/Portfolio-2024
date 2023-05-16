@@ -10,6 +10,9 @@ padding: 0;
 
 body {
     background: #1A1A2E;
+    position: relative; 
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -33,6 +36,7 @@ header {
     flex-direction: row;
     list-style: none;
     font-size: 20px;
+ 
 }
 
 #aboutMe {
@@ -47,6 +51,7 @@ header {
 #main-nav{
     text-align-last: left;
     margin-right: 50px;
+   
     }
 
 #Secondary-nav{
@@ -65,10 +70,20 @@ margin-right: 90px;
    
 }
 
-#resumeLink{
+#Links{
+    text-decoration-line: none;
+    text-decoration: none;
+    color: white;
+}
+#Links2{
     text-decoration-line: none;
     text-decoration: none;
     color: #E94560;
+}
+
+.Nav-sections{
+    text-decoration-line: none;
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -276,11 +291,14 @@ padding-left: 126px;
     height: 50px;
     margin-left: 10px;
     position: fixed;    
-    bottom: 210px;
+    bottom: 250px;
     right: 50px;
   }
 
-  
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
 
 
 
