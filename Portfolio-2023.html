@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
 </head>
 <script src="Portfolio.js"></script>
 <body>
@@ -28,8 +32,7 @@
 <nav id="Secondary-nav">
 <ul class="bar-nav">
     <li class="Nav-sections" ><span id="resume" style="color: #E94560; font-weight: bold; padding: 6px; padding-bottom: 10px;"><a id="Links2" href="Jose Arias Resume 2023.pdf" target="_blank" title="Jose Arias Resume 2023">Resume</a></span></li>
-    <li id="contactMe" class="Nav-sections">Contact me</li>
-</ul>
+    <li id="contactMe" class="Nav-sections">Contact me</li></ul>
     </nav>
 </header>
 <div id="top-tags">
@@ -101,25 +104,74 @@
     <p id="div-section2" class="tags">&lt;div&gt;</p>
 
 	<div class="grid-container">
-		<div class="grid-item">
-			<a href="https://www.example.com"><img class="grid" src="Imgs Projects/SenDO.png"></a>
-		</div>
-		<div class="grid-item">
-			<a href="https://www.example.com"><img class="grid" src="Imgs Projects/First Academical Portfolio.png"></a>
-		</div>
-		<div class="grid-item">
-			<a href="https://www.example.com"><img class="grid" src="Imgs Projects/First Landing Page.png"></a>
-		</div>
-		<div class="grid-item">
-			<a href="https://www.example.com"><img class="grid" src="Imgs Projects/Calendar Counter by hours for work.png"></a>
-		</div>
-		<div class="grid-item">
-			<a href="https://www.example.com"><img class="grid" src="Imgs Projects/Tribute Website.png"></a>
-		</div>
-		<div class="grid-item">
-			<a href="https://www.example.com"><img class="grid" src="Imgs Projects/Survey Form Page.png"></a>
-		</div>
-	</div>
+        <div class="grid-item">
+          <a href="https://www.example.com">
+            <div class="image-container">
+              <img class="grid" src="Imgs Projects/SenDO.png">
+              <div class="hover-overlay">
+               <div class="content">
+                <h3>SenDo</h3>
+            </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="https://www.example.com">
+            <div class="image-container">
+              <img class="grid" src="Imgs Projects/First Academical Portfolio.png">
+              <div class="hover-overlay">
+                <h3>1st Academical Portfolio</h3>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="https://www.example.com">
+            <div class="image-container">
+              <img class="grid" src="Imgs Projects/First Landing Page.png">
+              <div class="hover-overlay">
+                <h3>Landing Page</h3>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="https://www.example.com">
+            <div class="image-container">
+              <img class="grid" src="Imgs Projects/Calendar Counter by hours for work.png">
+              <div class="hover-overlay">
+                <h3>Hours' Counter</h3>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="https://www.example.com">
+            <div class="image-container">
+              <img class="grid" src="Imgs Projects/Tribute Website.png">
+              <div class="hover-overlay">
+                <h3>Tribute Website</h3>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="https://www.example.com">
+            <div class="image-container">
+              <img class="grid" src="Imgs Projects/Survey Form Page.png">
+              <div class="hover-overlay">
+                <h3>Survey Form Page</h3>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     
     <p id="div-section2" class="tags">&lt;/div&gt;</p>
     <p id="section-tag2" class="tags">&lt;/section&gt;</p>
@@ -200,8 +252,8 @@
     <h1 id="first-h1" style="color: #E94560; font-weight: bold;">Resume</h1>
     <p id="h1-section3" class="tags">&lt;h1&gt;</p>
     
-    <span id="resume" style="color: #E94560; font-weight: bold; padding: 6px;"><a id="resumeLink" href="Jose Arias Resume 2023.pdf" target="_blank" title="Jose Arias Resume 2023">Open</a></span> <br></br><br></br>
-    <span id="resume" style="color: #E94560; font-weight: bold; padding: 6px;"><a id="resumeLink" href="Jose Arias Resume 2023.pdf" target="_blank" title="Jose Arias Resume 2023" download="">Download</a></span>
+    <button id="resume" class="open" style="color: #E94560; font-weight: bold; padding: 6px;"><a id="resumeLink" href="Jose Arias Resume 2023.pdf" target="_blank" title="Jose Arias Resume 2023"><span id="open">Open</span></a><i></i></button> <br></br><br></br>
+    <button id="resume" class="download" style="color: #E94560; font-weight: bold; padding: 6px;"><a id="resumeLink" href="Jose Arias Resume 2023.pdf" target="_blank" title="Jose Arias Resume 2023" download=""><span id="download">Download</span></a><i></i></button>
     <p id="div-section2" class="tags">&lt;div&gt;</p> 
    
 
@@ -212,10 +264,33 @@
 
 </section>
 <div id="media">
-  <a href="https://github.com/JoseArias31" target="_blank"><img src="Media/icons8-github-200.png" alt="GitHub"></a>
+  <!-- <a href="https://github.com/JoseArias31" target="_blank"><img src="Media/icons8-github-200.png" alt="GitHub"></a>
   <a href="mailto:gojosearias@gmail.com" target="_blank"><img src="Media/icons8-mail-200.png" alt="Mail"></a>
   <a href="https://wa.me/16474252986" target="_blank"><img src="Media/icons8-whatsapp-200.png" alt="Whatsapp"></a>
-  <a href="https://www.linkedin.com/in/jose-arias-787a02178/" target="_blank"> <img src="Media/icons8-linkedin-200.png" alt="Linkedin"></a>
+  <a href="https://www.linkedin.com/in/jose-arias-787a02178/" target="_blank"> <img src="Media/icons8-linkedin-200.png" alt="Linkedin"></a>-->
+  <ul class="social-icons">
+        <li>
+      <a href="https://wa.me/16474252986" target="_blank">
+        <i class="fab fa-whatsapp icon"></i>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:gojosearias@gmail.com" target="_blank">
+        <i class="fab fa-google icon"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/jose-arias-787a02178/" target="_blank"> 
+        <i class="fab fa-linkedin-in icon"></i>
+      </a>
+    </li>
+    <li>
+        <a href="https://github.com/JoseArias31" target="_blank">
+          <i class="fab fa-github icon"></i>
+        </a>
+      </li>
+  </ul>
+  
 </div>
 <div id="bottom-tag">
 <p  class="tags">&lt;footer&gt;</p>
