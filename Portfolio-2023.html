@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
@@ -231,19 +231,19 @@
     <p id="h1-section" class="tags">&lt;p&gt;</p>
    <div id="main-certification">
     <div class="certification">
-        <h3 id="">Responsive Web Design Certification</h2>
+        <h3 id="text">Responsive Web Design Certification</h2>
     <h3 id="">freeCodeCamp,                                              2022</h2>
     </div>
     <br></br>
     <br></br>
     <div class="certification">
-        <h3 id=""> JavaScript Algorithms and Data Structures Certification </h2>
+        <h3 id="text"> JavaScript Algorithms and Data Structures Certification </h2>
     <h3 id="">freeCodeCamp,                                              2023</h2>
     </div>
     <br></br>
     <br></br>
     <div class="certification">
-        <h3 id="">Full Stack Web Development</h2>
+        <h3 id="text">Full Stack Web Development</h2>
     <h3 id="">York University, Toronto, CA                Present</h2>
     </div>
     </div>
@@ -263,6 +263,27 @@
 
 
 </section>
+
+<section id="four-section">
+
+  <div id="contactForm">
+   <form class="form">
+    <div class="title">Contact Me</div>
+    <input type="text" placeholder="Your email" class="input">
+    <textarea placeholder="Your message"></textarea>
+    <button>Submit</button>
+  </form>
+</div>
+
+<div id="mapApi">
+
+  
+  <div id="map"></div>
+
+</div>
+</section>
+
+
 <div id="media">
   <!-- <a href="https://github.com/JoseArias31" target="_blank"><img src="Media/icons8-github-200.png" alt="GitHub"></a>
   <a href="mailto:gojosearias@gmail.com" target="_blank"><img src="Media/icons8-mail-200.png" alt="Mail"></a>
@@ -304,7 +325,21 @@
 <p  id="footer2" class="tags">&lt;/footer&gt;</p>
 <p  class="tags">&lt;/html&gt;</p>
 
-
 <!--Third Section or Third page -->
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<script>
+  // Leaflet Open Library to get the Map
+  var map = L.map('map').setView([43.761, -79.411], 10);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  L.marker([43.761, -79.411]).addTo(map)
+    .bindPopup('Creating Web Services From a Friendly Place.<br> Reach Me Out!')
+    .openPopup();
+</script>
 </body>
 </html>
