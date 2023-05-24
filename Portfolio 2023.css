@@ -408,7 +408,7 @@ button a {
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
-  width: 300px;
+  width: 400px;
   
   padding: 20px;
   border-radius: 10px;
@@ -432,12 +432,12 @@ button a {
   padding: 8px 14px;
   border-radius: 8px;
   width: 91%;
-  height: 50px;
+  height: 35px;
 }
 
 .form textarea {
   border-radius: 8px;
-  height: 100px;
+  height: 190px;
   width: 91%;
   resize: none;
   outline: 0;
@@ -445,7 +445,7 @@ button a {
   border: 1px solid rgb(219, 213, 213);
 }
 
-.form button {
+/*.form button {
   align-self: flex-end;
   padding: 8px;
   outline: 0;
@@ -456,7 +456,7 @@ button a {
   background-color: royalblue;
   color: #fff;
   cursor: pointer;
-}
+} */
  
 #four-section {
   display: flex;
@@ -464,10 +464,66 @@ button a {
   text-align: -webkit-center;
 }
 
+/* SUBMIT BUTTON */
+
+/* MAP */
 #map {
   height: 400px;
   width: 400px;
 }
+
+.leaflet-control-zoom{
+width: 50px;
+}
+
+/* MAP */
+
+.submit {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #E94560;
+  overflow: hidden;
+  border-radius: 30px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  align-self: flex-end;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.submit:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color:#E94560;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+/* SUBMIT BUTTON */
 
 /* FOUR-SECTION */
 
