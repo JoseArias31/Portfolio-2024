@@ -126,6 +126,17 @@ margin-right: 90px;
 #profile{
     width: 300px;
     border-radius: 50% 20% / 10% 40%;
+
+    animation: pulsate 1.5s infinite alternate;  
+  border: 0.1rem solid #E94560;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .1rem #E94560,
+            0 0 .1rem #E94560,
+            0 0 1rem white,
+            0 0 0.8rem white,
+            0 0 1.8rem white,
+            inset 0 0 1.3rem white; 
 }
 
 .first-section{
@@ -173,7 +184,7 @@ margin-right: 90px;
 }
 
 #profile{
-    padding-top: 8%;
+  margin-top: 10%;
    
 }
 
@@ -313,9 +324,12 @@ margin-right: 90px;
     flex-direction: row;
     place-content: space-evenly;
     width: 100%;
-    text-align-last: center;
     color: white;
     margin-bottom: 45px;
+  }
+
+  .certification{
+    margin-left: 14%;
   }
 
   .iskills {
@@ -401,6 +415,10 @@ button a {
       height: 50px;
     }
 
+    #resumeOd{
+      text-align-last: center;
+    }
+
 /* RESUME BUTTONS */
 
 /* FOUR-SECTION */
@@ -412,7 +430,7 @@ button a {
   flex-direction: column;
   gap: 10px;
   width: 400px;
-  
+  background: rgb(28 53 88);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
@@ -460,8 +478,10 @@ button a {
 /* MAP */
 #map {
   height: 400px;
-  width: 500px;
+  width: 490px;
+  border-radius: 6%;
 }
+
 
 .leaflet-control-zoom{
 width: 50px;
@@ -475,13 +495,15 @@ width: 50px;
   font-weight: bold;
 }
 
+
+
 /* MAP */
 
 .submit {
   height: 50px;
   width: 200px;
   position: relative;
-  background-color: transparent;
+  
   cursor: pointer;
   border: 2px solid #E94560;
   overflow: hidden;
@@ -516,6 +538,7 @@ width: 50px;
   box-shadow: 1px 1px 200px #252525;
   color:#E94560;
   border: none;
+  background: white;
 }
 
 .type1:hover::after {
