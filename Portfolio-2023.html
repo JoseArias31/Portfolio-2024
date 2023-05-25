@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Arias' Portfolio</title>
-    <link href="Portfolio 2023.css" rel="stylesheet">
+    <link href="Portfolio 2023.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-
 </head>
-<script src="Portfolio.js"></script>
-<body>
 
+<body>
+  <div class="custom-cursor"></div>
     
 <header id="Nav">
-    <img class="nav-logo" src="Logo/Logo JA.png" alt="Jose Arias' Logo" style="border-radius: 100%;">
+  <a style="width: 22%" href="#html"><img class="nav-logo" src="Logo/Logo JA.png" alt="Jose Arias' Logo" style="border-radius: 100%;"></a>
     
     <nav id="main-nav" >
 <ul class="bar-nav">
@@ -32,7 +31,7 @@
 <nav id="Secondary-nav">
 <ul class="bar-nav">
     <li class="Nav-sections" ><span id="resume" style="color: #E94560; font-weight: bold; padding: 6px; padding-bottom: 10px;"><a id="Links2" href="Jose Arias Resume 2023.pdf" target="_blank" title="Jose Arias Resume 2023">Resume</a></span></li>
-    <li id="contactMe" class="Nav-sections">Contact me</li></ul>
+    <li id="contactMe" class="Nav-sections"><a id="Links" href="#contactForm">Contact me</a></li></ul>
     </nav>
 </header>
 <div id="top-tags">
@@ -268,9 +267,9 @@
 
   <div id="contactForm">
    <form class="form">
-    <div class="title">Contact Me</div>
-    <input type="text" placeholder="Your email" class="input">
-    <textarea placeholder="Your message"></textarea>
+    <div class="title" style="margin-bottom: 10%; color: white;">Contact Me</div>
+    <input type="text" placeholder="Your email" class="input" required>
+    <textarea placeholder="Your message" class="input" required></textarea>
     <button class="submit type1">Submit</button>
   </form>
 </div>
@@ -326,7 +325,7 @@
 <p  class="tags">&lt;/html&gt;</p>
 
 <!--Third Section or Third page -->
-
+<script src="Portfolio.js"></script>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 <script>
@@ -340,6 +339,9 @@
   L.marker([43.761, -79.411]).addTo(map)
     .bindPopup('Creating Web Services From a Friendly Place.<br> Reach Me Out!')
     .openPopup();
+
+  
 </script>
+
 </body>
 </html>
