@@ -347,7 +347,7 @@ margin-right: 90px;
 /* CODE BUTTON */
 
 
-#miModal {
+.miModal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -360,7 +360,7 @@ margin-right: 90px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#miModal img {
+.miModal img {
   display: block;
   margin: auto;
   max-width: 80%;

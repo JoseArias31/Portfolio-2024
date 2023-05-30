@@ -1,9 +1,9 @@
-function showImage() {
-  document.getElementById("miModal").style.display = "block";
+function showImage(modalId) {
+  document.getElementById(modalId).style.display = "block";
 }
 
-function closeModal() {
-  document.getElementById("miModal").style.display = "none";
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
 }
 
   console.log("Hello, Jose")
