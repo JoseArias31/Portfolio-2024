@@ -7,5 +7,3 @@ function closeModal(modalId) {
 }
 
   console.log("Hello, Jose")
-
-

@@ -217,6 +217,37 @@ margin-right: 90px;
 
 /* PROJECTS */
 
+
+
+.PL {
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(to top, white, white, white);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  
+}
+
+.LP{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+ .ProgrammingLanguages {
+  display: flex;
+  font-size: 15px;
+  place-content: center;
+  font-weight: 900;
+
+ }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
