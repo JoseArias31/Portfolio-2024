@@ -9,11 +9,12 @@ padding: 0;
 }
 
 body {
-    background: #0a192f;
+    background-color: #0a192f;
     position: relative; 
     margin: 0;
     padding: 0;
-   
+    color: rgb(33, 37, 41);
+    
 }
 
 
@@ -85,6 +86,10 @@ margin-right: 90px;
     text-decoration-line: none;
     text-decoration: none;
     color: #E94560;
+}
+
+#Links2:hover{
+color: white;a
 }
 
 .Nav-sections{
@@ -277,7 +282,7 @@ This botton is to check later to add it or not  */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 50px;
 }
 
 .grid-item {
@@ -452,15 +457,17 @@ This botton is to check later to add it or not  */
  
  .cta svg {
   position: relative;
-  top: 0;
+  top: -10px;
   margin-left: 10px;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #E94560;;
-  stroke-width: 3;
+  stroke: rgb(233, 69, 96);
+  stroke-width: 2px;
   transform: translateX(-5px);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease 0s;
+  width: 30px;
+  height: 21px;
  }
  
  .cta:hover:before {
@@ -578,6 +585,10 @@ button a {
     text-decoration: none;
     color: #E94560;
 }
+
+button a:hover{
+  color: white;
+} 
 
 
     #resume:hover {
@@ -785,19 +796,19 @@ ul.social-icons li {
 }
 
 ul.social-icons li a {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 40px;
-  font-size: 29px;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
+  width: 42px;
+    height: 42px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 28px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    z-index: 1;
   
 }
 
