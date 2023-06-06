@@ -872,6 +872,16 @@ ul.media li:nth-child(4) a:before {
 #map{
   width: 320px;
 }
+
+
+iframe{
+  width: 320px;
+}
+
+#profile {
+
+  width: 200px;
+}
 }
 
 
