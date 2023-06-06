@@ -562,7 +562,7 @@ padding-left: 126px;
   #text {
     color:#E94560
   }
-
+ 
 /* SKILLS */
 /* RESUME  BUTTONS*/
 
@@ -863,3 +863,16 @@ ul.media li:nth-child(4) a:before {
 /* MEDIA */
 
 /* FOOTER */
+
+
+/* MEDIA QUERYS */
+
+
+@media screen and (max-width: 550px) {
+#map{
+  width: 320px;
+}
+}
+
+
+/* MEDIA QUERYS */
