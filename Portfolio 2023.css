@@ -7,6 +7,9 @@ margin: 0;
 padding: 0;
 
 }
+html, body {
+  height: 100%;
+}
 
 body {
     background-color: #0a192f;
@@ -89,7 +92,7 @@ margin-right: 90px;
 }
 
 #Links2:hover{
-color: white;a
+color: white;
 }
 
 .Nav-sections{
