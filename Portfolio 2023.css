@@ -311,12 +311,17 @@ This botton is to check later to add it or not  */
   transform: translateY(-50%);
 }
 
+.PT{
+  color: white;
+  font-size: 20px;
+}
+
  .ProgrammingLanguages {
   display: flex;
   font-size: 15px;
   place-content: center;
   font-weight: 900;
-  margin-top: -141px;
+  margin-top: 1px;
  }
 
 .grid-container {
@@ -1076,14 +1081,7 @@ ul {
   align-items: center;
   box-shadow: 30px 50px 100px #85888C;
 }
-.content {
-  border: 1px solid #36383F;
-  border-radius: 20px;
-  width: 94%;
-  height: 91%;
-  background-color: #F5F6FA;
-  overflow: hidden;
-}
+
 nav {
   background-color: #1E1E23;
   height: 65px;
