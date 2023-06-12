@@ -1212,7 +1212,16 @@ nav {
 .JSE{
   font-size: 1rem;
 }
+#h1-section{
+  margin-left: 0;
+}
 
+#h1-section3 {
+  padding-left: 29px;
+}
+#p-section{
+padding-left: 0px;
+}
 /* NAV */
 
 }
