@@ -945,7 +945,7 @@ ul.media li:nth-child(4) a:before {
 
 @media screen and (max-width: 550px) {
 #map{
-  width: 320px;
+  width: 218px;
 }
 
 
@@ -1195,6 +1195,22 @@ nav {
 
 #cv{
   border: none;
+}
+
+#div-direction {
+      margin-left: 0;
+}
+
+#div-section{
+  margin-left: 0;
+}
+
+#section-tag{
+  margin-left: 0;
+}
+
+.JSE{
+  font-size: 1rem;
 }
 
 /* NAV */
