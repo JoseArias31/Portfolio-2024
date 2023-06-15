@@ -488,15 +488,17 @@
 
 <script>
   // Leaflet Open Library to get the Map
-  var map = L.map('map').setView([43.761, -79.411], 10);
+  var map = L.map('map', {
+  scrollWheelZoom: false // Desactiva el zoom con la rueda del ratón
+}).setView([43.761, -79.411], 10);
 
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
-  L.marker([43.761, -79.411]).addTo(map)
-    .bindPopup('Creating Web Services From a Friendly Place.<br> Reach Me Out!')
-    .openPopup();
+L.marker([43.761, -79.411]).addTo(map)
+  .bindPopup('Creating Web Services From a Friendly Place.<br> Reach Me Out!')
+  .openPopup();
 
   
 </script>
