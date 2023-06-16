@@ -76,6 +76,7 @@ margin-right: 90px;
 #resume {
     border: 2px solid white;
    padding: 3px;
+   background: white;
 }
 
 li #resume:hover{
@@ -648,6 +649,7 @@ padding-left: 126px;
   align-items: center;
   display: flex;
   margin-top: 10%;
+  background: white;
 }
 
 #hireMe1{
@@ -692,7 +694,7 @@ button a {
 }
 
 button a:hover{
-  color: white;
+  color: black;
 } 
 
 
