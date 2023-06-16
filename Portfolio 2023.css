@@ -669,7 +669,7 @@ padding-left: 126px;
 
 button {
     position: relative;
-    background: #394867;
+    background: rgba(60,64,67,0);
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -680,6 +680,7 @@ button {
     transition: 0.2s;
     width: 130px;
     font-weight: bold;
+   
     
   }
 
@@ -1050,6 +1051,7 @@ iframe{
 
 #profile{
   width: 250px;
+  flex: 1 1;
 }
 
 #st1-section{
@@ -1065,6 +1067,26 @@ flex-direction: column;
 #text{
   font-size: 20px;
 }
+
+.firstRow{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile{
+  margin-top: 0;
+}
+
+#right1{
+width: 100%;
+}
+
+#left1{
+  width: 100%;
+}
+
+
 
 }
 
