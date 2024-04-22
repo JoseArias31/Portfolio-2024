@@ -618,7 +618,7 @@ This botton is to check later to add it or not  */
 
   .iskills2 {
     width: 180px;
-    height: 150px;
+    height: 120px;
   }
 
   #h1-section3{
@@ -759,6 +759,52 @@ button a:hover{
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.FormID{
+align-items: center;
+
+}
+
+.sendBotton {
+
+  font-size:x-large;
+  justify-content: center;
+}
+
+.sendBotton:hover {
+
+  font-size:x-large;
+  justify-content: center;
+  color: #E94560;
+}
+
+.inputForm{
+  font-size: medium;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.formLabel {
+  width: 40%;
+  color: #fff;
+  margin-top: 2%;
+}
+.formLabel1 {
+  width: 20%;
+  color: #fff;
+  margin-top: 2%;
 }
 
 .form .title {
