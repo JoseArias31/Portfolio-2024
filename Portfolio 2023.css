@@ -287,7 +287,15 @@ nav {
 
 /* Tags */
 
+nav {
+  background-color: rgba(0, 0, 0, 1); /* Fondo sólido */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de transparencia */
+}
 
+/* Clase que se aplicará al hacer scroll */
+.nav-transparent {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+}
 
 
 /* PROJECTS */
