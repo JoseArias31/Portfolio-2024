@@ -112,19 +112,33 @@ color: white;
 
 /* NAV */
 
- #cv:hover {
-    color: #E94560 !important;
-    border-radius: 50px;
-    border-color: white !important;
-    transition: all 0.8s ease 0s;
-font-weight: 400;
-    }
+#cv {
+  border: 2px solid white;
+  padding: 3px;
+  padding-bottom: 4px;
+  border-radius: 50px; /* Rounded corners */
+  transition: all 0.8s ease 0s;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none; /* Remove underline from the link */
+  color: white; /* Default text color */
+  
+  /* Glow effect applied by default */
+  box-shadow: 0 0 10px rgba(233, 69, 96, 0.6), 0 0 20px rgba(233, 69, 96, 0.8), 0 0 30px rgba(233, 69, 96, 1);
+}
 
-    #cv {
-      border: 2px solid white;
-     padding: 3px;
-     padding-bottom: 4px;
-  }
+/* When hovering, remove the glow */
+#cv:hover {
+  color: #E94560 !important;
+  border-color: white !important;
+  border-radius: 50px;
+  transition: all 0.8s ease 0s;
+  font-weight: 400;
+
+  /* Remove the glow effect on hover */
+  box-shadow: none;
+}
+
 
 nav {
   background: #1E1E23;
@@ -297,6 +311,24 @@ nav {
   background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
 }
 
+#typewriter {
+  font-family: monospace;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden; /* Para que el texto se esconda hasta que sea revelado */
+  font-size: 35px;
+  display: inline-block;
+  min-height: 1.6em; /* Altura mínima para evitar el salto */
+}
+
+/* Efecto de parpadeo del cursor */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+#typewriter {
+  animation: blink 0.7s infinite step-end;
+}
 
 /* PROJECTS */
 
@@ -736,16 +768,20 @@ button a:hover{
     #download {
       width: 160px;
       height: 40px;
+      
+      
     }
 
     .open {
       width: 100px;
       height: 50px;
+      border-radius: 15px;
     }
 
     .download {
       width: 150px;
       height: 50px;
+      border-radius: 15px;
     }
 
     #resumeOd{
